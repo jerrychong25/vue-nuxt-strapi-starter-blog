@@ -1,5 +1,5 @@
 /**
- * Sample React Native App With React Native UI Kitten
+ * Sample React Native App
  * https://github.com/facebook/react-native
  *
  * @format
@@ -8,18 +8,6 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import {RkButton, RkCard, RkTheme} from 'react-native-ui-kitten';
-
-let accent = '#000000';
-
-RkTheme.setType('RkButton', 'accent', {
-  container: {
-    backgroundColor: accent
-  },
-  content: {
-    color: 'white'
-  }
-});
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -34,20 +22,8 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Text style={styles.instructions}>To get started, edit App.js!</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <RkButton rkType='accent'>Click me!</RkButton>
-        <RkCard>
-          <View rkCardHeader>
-            <Text>Header</Text>
-          </View>
-          <View rkCardContent>
-            <Text> quick brown fox jumps over the lazy dog</Text>
-          </View>
-          <View rkCardFooter>
-            <Text>Footer</Text>
-          </View>
-        </RkCard>
       </View>
     );
   }

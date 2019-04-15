@@ -1,4 +1,4 @@
-package com.rnhybridtest;
+package com.awesomeproject;
 
 import android.app.Application;
 
